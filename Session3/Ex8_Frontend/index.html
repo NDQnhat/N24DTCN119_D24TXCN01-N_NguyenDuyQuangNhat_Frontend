@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex8_Session3</title>
+</head>
+<body>
+    <div class="form">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name">Họ và tên: </label></td>
+                    <td><input type="text" name="name" id="name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="birthday">Ngày sinh: </label></td>
+                    <!-- <td><input type="datetime-local" value=""></td> -->
+                    <td><input id="birthday" type="date" name="ngày sinh" placeholder="mm-dd-yyyy" min="1900-01-01" max="2030-31-12"/></td>
+                </tr>
+                <tr>
+                    <td><label for="sex">Giới tính: </label></td>
+                    <td>
+                        <input type="radio" name="sex" id="nam"/>
+                        <label>Nam</label>
+                        <input type="radio" name="sex" id="nữ"/>
+                        <label>nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="num">Số căn cước công dân: </label></td>
+                    <td><input type="tel" name="num" id="num"/></td>
+                </tr>  
+                <tr>
+                    <td><label for="day">Ngày cấp: </label></td>
+                    <td><input id="day" type="date" name="day" placeholder="mm-dd-yyyy" min="1900-01-01" max="2030-31-12"/></td>
+                </tr>
+                <tr>
+                    <td><label for="place">Nơi cấp: </label></td>
+                    <td><input type="text" name="place" id="place"/></td>
+                </tr>
+                <tr>
+                    <td><label for="phoneNum">Số điện thoại: </label></td>
+                    <td><input type="tel" name="phoneNum" id="phoneNum"/></td>
+                </tr>                    
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="email" email="email" id="email"/></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Địa chỉ thường trú: </label></td>
+                    <td><textarea name="address" id="address" ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Địa chỉ tạm trú: </label></td>
+                    <td><textarea name="address" id="address" ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="CCCD">Loai căn cước công dân: </label></td>
+                    <td>
+                        <input type="radio" name="CCCD" id="mới"/>
+                        <label>CCCD mới </label>
+                        <input type="radio" name="CCCD" id="cũ"/>
+                        <label>CCCD cũ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dân tộc">Dân tộc: </label></td>
+                    <td><input type="text" name="dân tộc" id="dân tộc"/></td>
+                </tr>
+                <tr>
+                    <td><label for="tôn giáo">Tôn giáo: </label></td>
+                    <td><input type="text" name="tôn giáo" id="Tôn giáo"/></td>
+                </tr>
+                <tr>
+                    <td><label for="national">Quốc tịch: </label></td>
+                    <td><input type="text" name="national" id="quốc tịch"/></td>
+                </td>
+                <tr>
+                    <td><label for="name">Họ và tên cha/mẹ: </label></td>
+                    <td><input type="text" name="name" id="name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="num">Số căn cước công dân cha/mẹ: </label></td>
+                    <td><input type="tel" name="num" id="num"/></td>
+                </tr>  
+                <tr>
+                    <td><label for="pos">Tỉnh/Thành phó: </label></td>
+                    <td>
+                        <select name="pos" id="" aria-placeholder="Chọn tỉnh/thành phố">
+                            <option value="0">Chọn tỉnh/thành phố</option>
+                            <!-- <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option> -->
+                        </select>    
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit" style="text-align: center;">Gửi thông tin</button>
+    </div>
+</body>
+</html>

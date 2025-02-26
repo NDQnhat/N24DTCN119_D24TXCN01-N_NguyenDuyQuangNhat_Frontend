@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10_Session3</title>
+</head>
+<body>
+    <div class="form">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name">Họ và tên: </label></td>
+                    <td><input type="text" name="name" id="name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="birthday">Ngày sinh: </label></td>
+                    <!-- <td><input type="datetime-local" value=""></td> -->
+                    <td><input id="birthday" type="date" name="ngày sinh" placeholder="mm-dd-yyyy" min="1900-01-01" max="2030-31-12"/></td>
+                </tr>
+                <tr>
+                    <td><label for="sex">Giới tính: </label></td>
+                    <td>
+                        <input type="radio" name="sex" id="nam"/>
+                        <label>Nam</label>
+                        <input type="radio" name="sex" id="nữ"/>
+                        <label>nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phoneNum">Số điện thoại: </label></td>
+                    <td><input type="tel" name="phoneNum" id="phoneNum"/></td>
+                </tr>                    
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="email" email="email" id="email"/></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Tên công ty: </label></td>
+                    <td><input type="text" name="name" id="name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="pos">Vai trò trong cty: </label></td>
+                    <td>
+                        <select name="pos" id="" aria-placeholder="Giám đốc điều hành (CEO)">
+                            <option value="0">Giám đốc điều hành (CEO)</option>
+                            <option value="2">Nhóm trưởng</option>
+                            <option value="3">Trưởng phòng</option>
+                        </select>    
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pos">Quy mô công ty: </label></td>
+                    <td>
+                        <select name="pos" id="" aria-placeholder="Doanh nghiệp nhỏ">
+                            <option value="0">Doanh nghiệp nhỏ</option>
+                            <option value="2">Doanh nghiệp lớn</option>
+                            <option value="3">Doanh nghiệp vừa</option>
+                        </select>    
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="major">Ngành nghề công ty: </label></td>
+                    <td><input type="text" name="major" id=""/></td>
+                </tr>
+                <tr>
+                    <td><label for="reason">Lí do tham gia câu lạc bộ: </label></td>
+                    <td><textarea name="reason" id="" ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="exp">Kinh nghiệm lãnh đạo: </label></td>
+                    <td><textarea name="exp" id="" ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="futr">Mục tiêu khi tham gia câu lạc bộ: </label></td>
+                    <td><textarea name="futr" id="" ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="program">Thời gian rảnh: </label></td>
+                    <td>
+                        <input type="checkbox" name="program" id="Networking"/>
+                        <label>Networking</label>
+                        <input type="checkbox" name="program" id="workshop"/>
+                        <label>Workshop</label>
+                        <input type="checkbox" name="program" id="hội thảo"/>
+                        <label>Hội thảo</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="time">Thời gian rảnh: </label></td>
+                    <td>
+                        <input type="checkbox" name="time" id="có"/>
+                        <label>có</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit" style="text-align: center;">Đăng ký hội viên</button>
+    </div>
+</body>
+</html>

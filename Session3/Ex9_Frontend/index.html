@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex9_Session3</title>
+</head>
+<body>
+    <div class="form">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name">Họ và tên: </label></td>
+                    <td><input type="text" name="name" id="name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="birthday">Ngày sinh: </label></td>
+                    <!-- <td><input type="datetime-local" value=""></td> -->
+                    <td><input id="birthday" type="date" name="ngày sinh" placeholder="mm-dd-yyyy" min="1900-01-01" max="2030-31-12"/></td>
+                </tr>
+                <tr>
+                    <td><label for="sex">Giới tính: </label></td>
+                    <td>
+                        <input type="radio" name="sex" id="nam"/>
+                        <label>Nam</label>
+                        <input type="radio" name="sex" id="nữ"/>
+                        <label>nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phoneNum">Số điện thoại: </label></td>
+                    <td><input type="tel" name="phoneNum" id="phoneNum"/></td>
+                </tr>                    
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="email" email="email" id="email"/></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Địa chỉ: </label></td>
+                    <td><textarea name="address" id="address" ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="pos">Vai trò trong nhóm: </label></td>
+                    <td>
+                        <select name="pos" id="" aria-placeholder="Thành viên">
+                            <option value="0">Thành viên</option>
+                            <option value="2">Nhóm trưởng</option>
+                            <option value="3">Thủ quỹ</option>
+                        </select>    
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hobbies">Sở thsich: </label></td>
+                    <td><input type="text" name="hobbies" id=""/></td>
+                </tr>
+                <tr>
+                    <td><label for="skill">Kỹ năng: </label></td>
+                    <td><textarea name="skill" id="" ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="time">Thời gian rảnh: </label></td>
+                    <td>
+                        <input type="checkbox" name="time" id="sáng"/>
+                        <label>sáng</label>
+                        <input type="checkbox" name="time" id="chiều"/>
+                        <label>chiều</label>
+                        <input type="checkbox" name="time" id="tối"/>
+                        <label>tối</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="reason">Lí do tham gia: </label></td>
+                    <td><textarea name="reason" id="" ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="color">Màu sắc yêu thích: </label></td>  
+                    <td><input type="color" name="color" id="color"/></td>
+                </tr>
+                <tr>
+                    <td><label for="recieve">Đăng ký nhận bản tin: </label></td>
+                    <td>
+                        <input type="checkbox" name="recieve" id="có"/>
+                        <label>có</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="inf">Nhận thông báo qua email: </label></td>
+                    <td>
+                        <input type="radio" name="inf" id="Email"/>
+                        <label>Email</label>
+                        <input type="radio" name="inf" id="SMS"/>
+                        <label>SMS</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit" style="text-align: center;">Đăng ký thành viên</button>
+    </div>
+</body>
+</html>
