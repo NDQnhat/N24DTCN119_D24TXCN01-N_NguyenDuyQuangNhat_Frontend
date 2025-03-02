@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+h2 {
+    text-transform: uppercase;
+}
+hr {
+    width: 100%;
+    border-top: 2px dashed #202121;
+}
+img {
+    border-radius: 20px;
+}
+table {
+    /* border-collapse: collapse; */
+    border-spacing: 20px;
+}
+td {
+    vertical-align: top;
+    max-width: 450px;
+}
+a {
+    color: #202121;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+}
+p.time {
+    color: #b8baba;
+    font-size: 14px;
+}
+td.border {
+    border-left: 1px solid #d7d9d9;
+}
+td.border img {
+    margin-left: 20px;
+}

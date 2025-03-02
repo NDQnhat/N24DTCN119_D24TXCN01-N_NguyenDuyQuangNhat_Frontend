@@ -1,0 +1,14 @@
+* {
+    background-color: black;
+}
+.header {
+    text-align: left;
+    color: #ffffff;
+}
+.inf {
+    color: #18d63b;
+    text-decoration: underline dotted;
+    font-style: italic;
+    /* font-family: Copperplate, Papyrus, fantasy; */
+    font-weight: bolder;
+}

@@ -1,0 +1,54 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+}
+
+label, h3 {
+    padding-left: 10px;
+}
+h3 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+input {
+    border-radius: 5px;
+    margin: 10px;
+}
+select, hr {
+    margin: 10px;
+}
+button {
+    width: 730px;
+    border-radius: 5px;
+    background-color: #092ced;
+    height: 50px;
+    font-size: 18px;
+    color: bisque;
+    border: none;
+    margin: 15px;
+    cursor: pointer;
+}
+
+input.full {
+    width: 730px;
+}
+input.half {
+    width: 350px;
+}
+.container {
+    background-color: #e3e6e6;
+}
+.nor {
+    color: #4e4e4f;
+}
+select#country {
+    width: 288px;
+}
+select#state {
+    width: 230px;
+}
+input#expiration, input#cvv {
+    width: 150px;
+}

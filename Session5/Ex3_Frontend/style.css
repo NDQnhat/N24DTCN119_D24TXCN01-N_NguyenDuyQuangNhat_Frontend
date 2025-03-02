@@ -1,0 +1,31 @@
+body {
+    background-color: #e3e1dc;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    margin: auto;
+    width: 88%;
+}
+th {
+    background-color: #0564fc;
+    color: aliceblue;
+}
+td, th {
+    padding: 10px;         /* =cellpadding  */
+    border: 2px solid #f0ede4;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+h2 {
+    text-shadow: 2px 2px 5px gray;  /*lech. ngang lech. doc. mau` sac' */
+}
+table{
+    width: 100%; 
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+
+/*mo? rong. them*/
+tr:hover {
+    background-color: #dbd1d0;
+}

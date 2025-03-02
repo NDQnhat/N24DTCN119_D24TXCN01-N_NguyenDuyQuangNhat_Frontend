@@ -1,0 +1,19 @@
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 10;
+}
+h {
+    font-weight: normal;
+    font-size: 20px;
+    color: #0d4ed1;
+}
+.container {
+    width: 50%;
+}
+.example {
+    background-color: #FFFF00;
+    width: 50%;
+    border-left: 10px solid #FFCC00;
+}

@@ -1,0 +1,31 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 5%;
+    padding: 0;
+    color: #8c8a89;
+}
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+}
+img {
+    height: auto;
+    /* width: auto; */
+}
+b {
+    color: black;
+}
+p {
+    font-size: 18px;
+    margin: 0;
+}
+tr:nth-child(2){
+    font-size: 20px;
+    font-weight: bolder;
+    vertical-align: top;
+    color: black;
+}
+td:last-child {
+    font-size: 14px;
+}
