@@ -1,0 +1,94 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+body {
+    background-color: rgb(228, 230, 237);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+html {
+    margin: 0;
+}
+.container {
+    background-color: #ffffff;
+    padding-left: 20px;
+    /* padding-right: 0px; */
+    width: 26%;
+    height: 500px;
+    border-radius: 8px;
+}
+.container>p:first-child {
+    font-size: 28px;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+.status {
+    border: 1px solid rgb(255, 204, 133);
+    background-color: rgb(255, 238, 201);
+    color: rgb(189, 56, 4);
+    width: 100px;
+    align-content: center;
+    border-radius: 8px;
+}
+.status p {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    padding: 1px 10px;
+}
+.inf p {
+    color: rgba(1, 1, 1, 0.6);
+}
+.blue {
+    color: rgb(56, 116, 255);
+}
+.black {
+    color: black;
+}
+.progress {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(1, 1, 1, 0.6);
+    padding-right: 20px;
+}
+.progress p:last-child {
+    justify-content: end;
+    color: black;
+}
+.bar {
+    margin-right: 20px;
+}
+.bar hr:first-child {
+    height: 9px;
+    background-color: #ffeec9;
+    border: 1px solid #ffeec9;
+    border-radius: 8px;
+}
+.bar hr:last-child {
+    height: 9px;
+    border: 1px solid rgb(230, 119, 9);
+    background-color: rgb(230, 119, 9);
+    border-radius: 8px;
+    margin-right: 100px;
+    position: relative;
+    top: -20px;
+}
+.date .op {
+    opacity: 0.6;
+}
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 120px;
+}
+.img {
+    height: fit-content;
+    width: 250px;
+}
+.img img:last-child {
+    position: relative;
+    left: -30px;
+}
+.oth {
+    display: flex;
+}
+
