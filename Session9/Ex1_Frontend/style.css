@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 10px solid black;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 95vh;
+    display: flex;
+}
+span {
+    background-color: #3599db;
+    padding: 50px 10px;
+}

@@ -1,0 +1,32 @@
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    /* align-content: center; */
+}
+.container {
+    width: 1000px;
+    height: fit-content;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: #f2f2f2;
+}
+.box {
+    width: 200px;
+    height: 50px;
+}
+.row1, .row2 {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.box {
+    background-color: #2fcc70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

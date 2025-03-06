@@ -45,3 +45,6 @@ footer {
 i {
     margin-right: 30px;
 }
+.dotted {
+    text-decoration: underline dotted;
+}
