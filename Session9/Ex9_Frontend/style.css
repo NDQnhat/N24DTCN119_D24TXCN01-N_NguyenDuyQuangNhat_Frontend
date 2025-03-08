@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: bisque;
+}
+.container {
+    /* display: flex; */
+    max-width: 1500px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* align-items: center; */
+    justify-content: center;
+}
+header>img {
+    /* margin: 10px; */
+    width: 1510px;
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+    animation: zzz 3s infinite;
+}
+.row {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 10px;
+}
+.row img {
+    width: 500px;
+    height: 200px;
+}
+h3.long {
+    width: 400px;
+}
+.title {
+    position: relative;
+    /* top: -50px; */
+}
+h3, p {
+    position: absolute;
+    /* top: -150px; */
+}
+h3 {
+    top: -150px;
+}
+p {
+    top: -100px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.title>p.button {
+text-align: center;
+}
+.button >p{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    margin: 0 50px;
+    height: 30px;
+    color: red;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    animation: effect 10s infinite;
+}
+.button>p:hover {
+    cursor: pointer;
+    background-color: #00ffff;
+    color:blueviolet ;
+    transform: rotate3d(1, 1, 0, 45deg);
+}
+.button {
+    perspective: 300px;
+}
+@keyframes effect {
+    0% {
+        transform: rotate3d(1, 1, 0, 0deg);
+        scale: 1.2;
+      }
+      25% {
+        transform: rotate3d(1, 1, 0, 45deg);
+        scale: 1.0;
+      }
+      50% {
+        transform: rotate3d(1, 1, 0, 0deg);
+        scale: 1.2;
+      }
+      100% {
+        transform: rotate3d(1, 1, 0, -45deg);
+        scale: 1.0;
+      }
+}
+@keyframes zzz {
+    0% {
+        scale: 1;
+        left: 0;
+    }    
+    25% {
+        scale: 1.2;
+        left: 20px;
+    }
+    50% {
+        scale: 1;
+        left: 0;
+    }
+    75% {
+        left: -20px;
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+        right: 0;
+    }
+
+}
