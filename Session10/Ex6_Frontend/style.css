@@ -1,0 +1,89 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 14px;
+    font-weight: bolder;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    z-index: 98646;
+    border: 1px solid white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: white;
+}
+.inf {
+    position: relative;
+    height: 400px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkBjHi_9nXpYAI9SSfTVl9hbluKfQbpvO5uQ&s/1200x400'); /* Thay bằng URL hình ảnh thực tế */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+.news {
+    color: white;
+    max-width: 700px;
+}
+.time {
+    font-size: 12px;
+    margin-bottom: 10px;
+    opacity: .8;
+}
+h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.news p:last-child {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.control {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.arrow, .page {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    /* border-radius: 120px; */
+    font-size: 16px;
+}
+.page {
+    border-radius: 100%;
+}
+.arrow:hover, .page:hover {
+    background-color: #ccc;
+}
+.page.present {
+    background-color: #000;
+    color: white;
+}
+.left-arrow, .right-arrow {
+    font-size: 20px;
+}
+.left-arrow {
+    background-color: #e2e2e2;
+}
+.right-arrow {
+    background-color: #000;
+    color: white;
+}

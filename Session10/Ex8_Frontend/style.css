@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    gap: 300px;
+}
+/* .e-paper {
+    display: flex;
+    justify-content: flex-end;
+} */
+.control {
+    display: flex;
+    gap: 50px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.e-paper a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.container {
+    display: flex;
+    max-width: 90vw;
+    /* justify-content: center; */
+    margin: 20px auto;
+    gap: 20px;
+}
+.highlight {
+    position: relative;
+    max-width: fit-content;
+    border-radius: 10px;
+}
+.highlight img {
+    width: 500px;
+    height: 400px;
+}
+.onPic {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    background: #fff;
+    padding: 15px;
+    width: 450px;
+}
+.onPic h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+.onPic p {
+    font-size: 14px;
+    margin: 0;
+}
+.inf {
+    width: 40%;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+.top-stories h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.top-stories p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.top-stories {
+    width: 80vw;
+}
+.above {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+}
+.quick-bites h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.quick-bites button {
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+}
+h3 {
+    font-weight: lighter;
+    background-color: yellow;
+    width: fit-content;
+    margin-top: 0;
+}
+.letter {
+    margin-top: 20px;
+    color: #007bff;
+    font-weight: bolder;
+}
+.letter p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.letter input {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.letter button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.inp {
+    display: flex;
+    align-items: center;
+}
+.letter button:hover {
+background-color: #0056b3;
+}
+hr {
+    opacity: .4;
+}
