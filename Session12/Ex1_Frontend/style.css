@@ -1,0 +1,11 @@
+.custome-opt {
+    max-width: fit-content;
+    color: aliceblue !important;
+    background-color: #ff6347 !important;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
