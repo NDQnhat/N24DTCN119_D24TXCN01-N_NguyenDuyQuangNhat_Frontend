@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Poppins', Static;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .logo img {
+    width: 50px;
+    height: 32px;
+} */    /*hinh` tai? ve` dung' ti? le. roi` khong can` chinh? lai.*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 100px 30px 54px;
+    /* width: 1440px; */
+    /* height: 100px; */
+    width: 1286px;
+    height: 41px;
+}
+.logo {
+    font-size: 34px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+}
+nav {
+    width: 430px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.more {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.content {
+    width: 1440px;
+    height: 717px;
+    background-image: url(./scandinavian-interior-mockup-wall-decal-background\ 1.png);
+}
+.card {
+    background-color: #FFF3E3;
+    width: 561px;
+    height: 334px;
+    border-radius: 10px;
+    padding: 62px 43px 37px 39px;
+    position: absolute;
+    top: 253px;
+    left: 739px;
+}
+.card p, .card h1 {
+    margin: 0;
+}
+.card p:first-child {
+    color: #333333;
+    line-height: 100%;
+    letter-spacing: 3px;
+}
+.card h1 {
+    font-size: 52px;
+    line-height: 65px;
+    color: #B88E2F;
+    width: 559px;
+    height: 127px;
+}
+.card p:nth-child(3) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+button {
+    margin-top: 46px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 25px 72px;
+    border: none;
+    background-color: #B88E2F;
+}
+button:hover, .more img:hover, .logo:hover {
+    cursor: pointer;
+    scale: 1.2;
+    opacity: .3;
+}
+.demo {
+    padding: 56px 126px 100px 131px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 62px;
+}
+.title {
+    text-align: center;
+}
+.img {
+    display: flex;
+    gap: 20px;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}

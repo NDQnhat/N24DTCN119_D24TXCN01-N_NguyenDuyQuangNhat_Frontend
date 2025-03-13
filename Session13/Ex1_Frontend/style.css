@@ -1,0 +1,136 @@
+body {
+    font-family: 'Eudoxus Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 39px 100px;
+    align-items: center;
+    /* width: 1440px; */
+    /* height: 120px; */
+    width: 1240px;
+    height: 42px;
+}
+.home {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+}
+nav {
+    width: 461px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0%;
+    color: #151411;
+}
+.more {
+    display: flex;
+    gap: 24px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h1 {
+    margin: 100px 36px 30px 36px;
+    width: 724px;
+    height: 166px;
+    line-height: 130%;
+    font-size: 62px;
+    text-align: center;
+    font-weight: lighter;
+    font-weight: 700;
+}
+.h1>img {
+    position: absolute;
+    /* top: 48%; */
+    top: 298px;
+    left: 1018px;
+}
+main>p {
+    width: 796px;
+    height: 96px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+    color: #AFADB5;
+    margin-bottom: 92px;
+}
+main>img {
+    position: absolute;
+    top: 317.6px;
+    left: 100px;
+}
+.first {
+    width: 191px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px;
+    gap: 18px;
+}
+.search {
+    display: flex;
+    width: 810px;
+    justify-content: space-between;
+    align-items: center;
+}
+input {
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+button {
+    width: 170px;
+    height: 54px;
+    border: none;
+    background-color: #518581;
+    color: #FFFFFF;
+    margin: 15px;
+    font-size: 18px;
+}
+.search {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 80px 0px #AFADB533;
+    position: absolute;
+    top: 602px;
+    left: 315px;
+}
+.bgr-img {
+    margin-bottom: 180px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    align-items: center;
+}
+footer img:last-child {
+    width: 505px;
+    height: 96px;
+}
+header img:hover, .home:hover, a:hover, .more:hover, button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    opacity: .4;
+}
