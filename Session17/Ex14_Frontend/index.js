@@ -1,0 +1,11 @@
+let r = prompt("Nhap. ban' kinh': ");
+let h = prompt("Nhap. chieu` cao: ");
+const pi = Math.PI;
+let Sxq = pi*r*r;
+let Stp = 2*Sxq + 2*pi*r*h;
+let V = Sxq*h;
+let p = 2*pi*r;
+ console.log(Sxq);
+ console.log(Stp);
+ console.log(V);
+ console.log(p);
