@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3_Session31</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        span {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+        .green {
+            background-color: green;
+        }
+        .red {
+            background-color: red;
+        }
+        .purple {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p>change background-color</p>
+    <p>Mouse click</p>
+    <span class="green">xanh</span>
+    <span class="red">do</span>
+    <span class="purple">tim</span>
+
+    <script>
+        let spans = document.getElementsByTagName("span");
+        let body = document.getElementsByTagName("body")[0];
+        for (let i = 0; i < spans.length; i++) {
+            spans[i].addEventListener("mouseenter", function() {
+                let color = this.className;
+                body.style.backgroundColor = color;
+            });
+        }
+    </script>
+</body>
+</html>

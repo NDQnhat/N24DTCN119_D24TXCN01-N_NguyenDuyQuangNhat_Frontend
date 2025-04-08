@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4_Session32</title>
+</head>
+<body>
+    <input type="text" id="email" placeholder="Enter your email"/><br>
+    <p id="checkValid"></p>
+    <button id="btn">check</button>
+    <script>
+        let input = document.getElementById("email");
+        let btn = document.getElementById("btn");
+        let checkValid = document.getElementById("checkValid");
+        btn.addEventListener("click", function(){
+            let data = input.value;
+            if(!data.includes("@") || (!data.endsWith(".com") && !data.endsWith(".vn"))){
+                checkValid.innerHTML = "email không hợp lệ";
+                checkValid.style.color = "red";
+            } else{
+                checkValid.innerHTML = "email hợp lệ!!";
+                checkValid.style.color = "green";
+            }
+            input.value = "";
+        });
+    </script>
+</body>
+</html>

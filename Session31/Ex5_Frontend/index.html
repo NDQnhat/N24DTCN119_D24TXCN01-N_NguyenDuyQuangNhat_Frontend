@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5_Session31</title>
+    <style>
+        h2 {
+            font-size: 48px;
+        }
+        table {
+            width: 80%;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Danh sách nhân viên</h2>
+    <table border="1"></table>
+
+    <script>
+        const employees = [
+            { stt: 1, name: "John", age: "18", address: "New York" },
+            { stt: 2, name: "Mike", age: "22", address: "Canada" },
+            { stt: 3, name: "Linda", age: "19", address: "California" },
+            { stt: 4, name: "Peter", age: "25", address: "London" },
+            { stt: 5, name: "Tony", age: "17", address: "New York" },
+        ];
+        
+        let table = document.querySelector("table");
+        let headRow = document.createElement("tr");
+        let headers = ["STT", "NAME", "AGE", "ADDRESS"];
+        
+        headers.forEach(element => {
+            const th = document.createElement("th");
+            th.textContent = element;
+            headRow.appendChild(th);
+        });
+        
+        table.appendChild(headRow);
+
+        employees.forEach(element => {
+            let row = document.createElement("tr");
+
+            let sttCell = document.createElement("td");
+            sttCell.textContent = element.stt;
+            row.appendChild(sttCell);
+
+            let nameCell = document.createElement("td");
+            nameCell.textContent = element.name;
+            row.appendChild(nameCell);
+
+            let ageCell = document.createElement("td");
+            ageCell.textContent = element.age;
+            row.appendChild(ageCell);
+
+            let addressCell = document.createElement("td");
+            addressCell.textContent = element.address;
+            row.appendChild(addressCell);
+            
+            table.appendChild(row);
+        });
+    </script>
+</body>
+</html>

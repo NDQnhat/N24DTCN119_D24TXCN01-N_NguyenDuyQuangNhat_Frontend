@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2_Session31</title>
+</head>
+<style>
+    body {
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease;
+    }
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <h2>Toggle Dark/ Light Mode</h2>
+    <div>Click the button to toggle between dark and light mode for this page</div>
+    <button id="btn toggle-mode">Toggle dark mode</button>
+
+    <script>
+        let btn = document.getElementById("btn toggle-mode");
+        let body = document.getElementsByTagName("body")[0];
+        console.log(body);
+        btn.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>

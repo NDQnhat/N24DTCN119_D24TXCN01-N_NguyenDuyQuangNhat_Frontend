@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3_Session32</title>
+</head>
+<body>
+
+    <input type="text" id="input" placeholder="Nhập tên môn học">
+    <button id="enter">Thêm môn học</button>
+    <ol id="ol"></ol>
+
+    <script>
+        let input = document.getElementById("input");
+        // let ol = document.createElement("ol");
+        let enter = document.getElementById("enter");
+        let ol = document.getElementById("ol");
+        // input.addEventListener("keypress", (event) => {
+        //     if (event.key === "Enter") {
+        //         let li = document.createElement("li");
+        //         li.innerText = input.value;
+        //         ol.appendChild(li);
+        //         input.value = "";
+        //     }
+        // });
+        enter.addEventListener("click", (event) => {
+            // event.preventDefaolt();
+            let li = document.createElement("li");
+            li.innerHTML = input.value; 
+            if(li.innerHTML === "") {
+                alert("tên môn học không được để trống!!");
+                return;
+            } else {
+                ol.appendChild(li);
+                input.value = "";
+            }
+        });
+    </script>
+</body>
+</html>

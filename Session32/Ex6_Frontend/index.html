@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6_Session31</title>
+</head>
+<body>
+    <div class="container">
+        <label for="username">username: </label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">password: </label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+        const account = {
+            username: " huanrose@gmail.com",
+            password: "123456"
+        };
+
+        let login = () => {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === account.username && password === account.password) {
+                console.log("Login successful!");
+            } else {
+                console.log("Login failed!");
+            }
+        };
+    </script>
+</body>
+</html>
