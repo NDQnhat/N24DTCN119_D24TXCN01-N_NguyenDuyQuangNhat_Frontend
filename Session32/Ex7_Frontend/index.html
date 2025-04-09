@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ex7_Session31</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div id="myDIV" class="header">
-      <h2 style="margin: 5px">My To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title..." />
-      <span class="addBtn">Add</span>
-    </div>
 
-    <ul id="myUL">
-      <!-- dữ liệu mẫu ko được sử dụng  -->
-      <li>Pay bills <span class="close">X</span></li>
-      <li class="checked">Pay bills <span class="close">X</span></li>
-    </ul>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ex7_Session32</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    img {
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+    }
 
-    <script src="./index.js"></script>
-  </body>
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="https://th.bing.com/th/id/OIP.fipTrRQExGhjE8JicyuNFgHaGk?rs=1&pid=ImgDetMain" alt="">
+    <img src="https://th.bing.com/th/id/OIP.9CRUSCTvLO0eCASfngHupgHaH7?rs=1&pid=ImgDetMain" alt="">
+    <img src="https://th.bing.com/th/id/OIP.BlD9yr7cDSvLlgrkb8JYSgHaHa?rs=1&pid=ImgDetMain" alt="">
+  </div>
+
+  <script>
+    let images = document.querySelectorAll("img");
+    let container = document.querySelector(".container");
+    images.forEach((image) => {
+      image.addEventListener("click", function (event) {
+        // flag = false;
+        event.stopPropagation();
+        image.style.width = "800px";
+        image.style.height = "700px";
+        image.style.transition = "all 0.5s ease-in-out";
+        image.style.position = "absolute";
+        // container.style.opacity = "0.5";
+        container.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+      });
+    });
+
+    container.addEventListener("click", function () {
+      images.forEach((image) => {
+        image.style.width = "200px";
+        image.style.height = "200px";
+        image.style.position = "static";
+        flag = true;
+        image.style.transition = "all 0.5s ease-in-out";
+      });
+      container.style.backgroundColor = "#f0f0f0";
+    });
+
+
+
+  </script>
+</body>
+
 </html>

@@ -1,23 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ex9_Session31</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div id="myDIV" class="header">
-      <h2 style="margin: 5px">My To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title..." />
-      <span class="addBtn" onclick="addTodo()">Add</span>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ex9_Session322</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .progress-container {
+      width: 80%;
+      height: 30px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      /* overflow: hidden; */
+      margin: 20px auto;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: rgba(0, 128, 0);
+      transition: width 0.3s, background-color 0.3s;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #479efc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Progress Bar width Background Effect</h1>
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
     </div>
+    <div class="buttons">
+      <button onclick="changeProgress(10)">Tăng tiến trình</button>
+      <button onclick="changeProgress(-10)">Giảm tiến trình</button>
+    </div>
+  </div>
 
-    <ul id="myUL">
-      <!-- dữ liệu mẫu ko được sử dụng  -->
-      <li>Pay bills <span class="close">X</span></li>
-      <li class="checked">Pay bills <span class="close">X</span></li>
-    </ul>
+  <script>
+    let progress = 0;
+    function changeProgress(amount) {
+      progress += amount;
+      if (progress > 100) {
+        progress = 100;
+      } else if (progress < 0) {
+        progress = 0;
+      }
 
-    <script src="./index.js"></script>
-  </body>
+      let progressBar = document.getElementById("progress-bar");
+      // let container = document.querySelector(".progress-container");
+      let body = document.querySelector("body");
+      progressBar.style.width = progress + '%';
+      // container.style.opacity = `${progress / 100}`;
+      body.style.opacity = `${progress / 100}`;
+    }
+  </script>
+
+
+</body>
+
 </html>

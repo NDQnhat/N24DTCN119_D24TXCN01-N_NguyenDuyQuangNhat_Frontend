@@ -3,33 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex6_Session31</title>
+    <title>Ex6_Session32</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .btn-container {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            /* font-size: 16px; */
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <label for="username">username: </label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">password: </label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <button onclick="login()">Login</button>
+        <p id="text">Chữ sẽ thay đổi kích thước khi bấm nút</p>
+        <div class="btn-container">
+            <button id="btn-plus">+</button>
+            <button id="btn-neg">-</button>
+        </div>
     </div>
 
     <script>
-        const account = {
-            username: " huanrose@gmail.com",
-            password: "123456"
-        };
-
-        let login = () => {
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            if (username === account.username && password === account.password) {
-                console.log("Login successful!");
-            } else {
-                console.log("Login failed!");
-            }
-        };
+        let text = document.getElementById("text");
+        let btnPlus = document.getElementById("btn-plus");
+        btnPlus.style.backgroundColor = "green";
+        let btnNeg = document.getElementById("btn-neg");
+        btnNeg.style.backgroundColor = "red";
+        let fontSize = 16;
+        text.style.fontSize = fontSize + "px";
+        btnPlus.addEventListener("click", function() {
+            fontSize += 2;
+            text.style.fontSize = fontSize + "px";
+        });
+        btnNeg.addEventListener("click", function() {
+            fontSize -= 2;
+            text.style.fontSize = fontSize + "px";
+        });
     </script>
 </body>
 </html>

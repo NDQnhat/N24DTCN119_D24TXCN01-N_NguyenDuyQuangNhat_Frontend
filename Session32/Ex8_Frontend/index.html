@@ -1,23 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ex8_Session31</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div id="myDIV" class="header">
-      <h2 style="margin: 5px">My To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title..." />
-      <span class="addBtn" onclick="addTodo()">Add</span>
-    </div>
 
-    <ul id="myUL">
-      <!-- dữ liệu mẫu ko được sử dụng  -->
-      <li>Pay bills <span class="close">X</span></li>
-      <li class="checked">Pay bills <span class="close">X</span></li>
-    </ul>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ex8_Session32</title>
+  <!-- <link rel="stylesheet" href="./style.css" /> -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+    }
 
-    <script src="./index.js"></script>
-  </body>
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #f4f4f4;
+      padding: 10px;
+      margin: 5px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>To-Do List K24</h2>
+  <input type="text" id="taskInput" placeholder="Nhập công việc">
+  <button onclick="addTask()">Thêm</button>
+  <ul id="taskList"></ul>
+
+  <script>
+    let input = document.getElementById("taskInput");
+    let ul = document.getElementById("taskList");
+    let btn = document.querySelector("button");
+    let tasks = [];
+
+    btn.addEventListener("click", function () {
+      let task = input.value.trim();
+      if (task) {
+        let li = document.createElement("li");
+        li.innerHTML = `${task} <span><button onclick="editTask(this)">Sửa</button> <button onclick="delTask(this)">Xóa</button></span>`;
+        ul.appendChild(li);
+        tasks.push(task);
+        input.value = "";
+        // renderTasks();
+      } else {
+        alert("Vui lòng nhập công việc!");
+      }
+    });
+
+    editTask = (btn) => {
+      let editLi = btn.parentElement.parentElement;
+      let editTask = editLi.firstChild.nodeValue;
+      editTask = prompt("Chỉnh sửa công việc: ", editTask);
+      if (editTask) {
+        editLi.firstChild.nodeValue = editTask;
+      } else {
+        alert("Vui lòng nhập công việc!");
+      }
+    };
+
+    delTask = (btn) => {
+      let delLi = btn.parentElement.parentElement;
+      let delTask = delLi.firstChild.nodeValue;
+      if (confirm("Bạn co muốn xóa công việc này không?")) {
+        ul.removeChild(delLi);
+        tasks = tasks.filter(task => task !== delTask);
+      }
+    };
+  </script>
+</body>
+
 </html>
