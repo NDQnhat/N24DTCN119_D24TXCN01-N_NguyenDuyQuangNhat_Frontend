@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1_Session33</title>
+    <style>
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        input {
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            margin-right: 10px;
+            outline: none;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            border: 2px solid #f2f2f2;
+            max-width: fit-content;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="password" id="password" placeholder="Enter your password" />
+        <img id = "show" src="https://cdn-icons-png.flaticon.com/512/16702/16702790.png " alt="" />
+    </div>
+
+    <script>
+        let show = document.getElementById("show");
+        let password = document.getElementById("password");
+        let type = password.getAttribute("type");
+        show.addEventListener("click", function () {
+            if (type === "password") {
+                password.setAttribute("type", "text");
+                type = "text";
+            } else {
+                password.setAttribute("type", "password");
+                type = "password";
+            }
+        });
+    </script>
+</body>
+
+</html>

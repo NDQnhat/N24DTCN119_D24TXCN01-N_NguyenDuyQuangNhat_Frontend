@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2_Session33</title>
+</head>
+<body>
+    <textarea name="" id="data" cols="50" rows="5"></textarea>
+    <p id="count">0 ký tự</p>
+    <button onclick="check()">Kiểm tra</button>
+
+    <script>
+        let count = 0;
+        let data = document.getElementById("data");
+        let checked = document.getElementById("count");
+        function check() {
+            let text = data.value;
+            count = text.length;
+            checked.innerHTML = count + " ký tự";
+        }
+    </script>
+</body>
+</html>
