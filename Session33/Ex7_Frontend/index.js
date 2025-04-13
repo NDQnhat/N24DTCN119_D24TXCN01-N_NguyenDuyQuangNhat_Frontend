@@ -62,12 +62,12 @@ let buyBtn = document.querySelectorAll(".add-to-cart");
 let cartArea = document.getElementById("cart-area");
 let isEmpty = document.getElementById("empty-cart");
 let cartTotal = document.getElementById("cart-total");
-let cartCount = document.getElementById("cart-count");
-let cartItems = document.getElementById("cart-items");
+// let cartCount = document.getElementById("cart-count");
 let carts = [];
 
 buyBtn.forEach((item) => {
     item.addEventListener("click", (e) => {
+        e.preventDefault();
         
     });
 });
