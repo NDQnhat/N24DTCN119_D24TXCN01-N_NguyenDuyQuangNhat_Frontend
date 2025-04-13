@@ -63,11 +63,31 @@ let cartArea = document.getElementById("cart-area");
 let isEmpty = document.getElementById("empty-cart");
 let cartTotal = document.getElementById("cart-total");
 // let cartCount = document.getElementById("cart-count");
-let carts = [];
 
 buyBtn.forEach((item) => {
     item.addEventListener("click", (e) => {
-        e.preventDefault();
-        
+        let name = e.target.getAttribute("data-name");
+        let price = +(e.target.getAttribute("data-price"));
+        cart.push({ name, price });
+        totalPrice += price;
+        renderCart();
     });
 });
+
+function renderCart() {
+    let cartItems = document.getElementById("cart-items");
+    cartItems.innerHTML = "";
+
+    cart.forEach((item) => {
+        let cartItem = document.createElement("div");
+        cartItem.className = "cart-item";
+        cartItem.innerHTML = `
+            <p>${item.name} - ${item.price.toLocaleString()} ₫</p>
+        `;
+        cartItems.appendChild(cartItem);
+    });
+
+    cartTotal.innerText = `Tổng: ${totalPrice.toLocaleString()} ₫`;
+
+    isEmpty.style.display = cart.length > 0 ? "none" : "block";
+}
